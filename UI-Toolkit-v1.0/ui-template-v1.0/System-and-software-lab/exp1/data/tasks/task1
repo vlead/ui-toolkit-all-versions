@@ -1,0 +1,4 @@
+Task 1:
+
+List the contents of the home directory along with their properties. If no files are present create a directory by name "demo" and an empty file by name "demo.txt"
+

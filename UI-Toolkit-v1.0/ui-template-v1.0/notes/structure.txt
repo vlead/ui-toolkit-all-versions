@@ -1,0 +1,33 @@
+site
+  lab (directory)
+    html (index.html)
+      div(id="container")
+        header
+          div(id="lab-logo")
+          div(id="lab-name")
+        article
+          header
+          section
+          ... 
+          section(id="list-of-experiments")
+          section
+          ...
+          aside
+          footer
+      script
+      ...
+
+
+      
+  exp   (directory)
+    html (index.html)
+      div(id="container")
+        header(class="lab custom")
+        article
+          header
+          nav
+          section
+          ...
+          aside
+          footer
+    

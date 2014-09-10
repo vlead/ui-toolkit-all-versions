@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+lang="en" xml:lang="en">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2011-06-20 20:33:57 IST"/>
+<meta name="author" content="Chanakya Aalla"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+
+<h1 class="title">Systems and Software lab</h1>
+
+<p><img src="../images/logo.jpg"  alt="../images/logo.jpg" />
+</p>
+<p>
+<a href="./index.html">Systems and Software Virtual Lab</a>
+</p>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1">File Management </h2>
+<div class="outline-text-2" id="text-1">
+
+
+
+</div>
+
+<div id="outline-container-1.1" class="outline-3">
+<h3 id="sec-1.1">Introduction </h3>
+<div class="outline-text-3" id="text-1.1">
+
+
+<p>
+Welcome to File Management, the first experiment of the Systems and Software lab. File Management consists of creating files and folders, copying and moving them locally etc. The goal of this experiment is to teach how to manipulate files and folders on a Linux Machine. The theory section provides a brief overview of the linux commands which are required to do file management.
+The experimental platform for this experiment is a command line interface which mimics the terminal of a linux machine. The command line interface supports a few basic commands to enable the user to learn file management basics. The experiment contains the command line interface and an instructor section (in green background) below it. The instructor section guides the user to peform the experiment which is a series of tasks.
+Proceed to the theory section to get an overview of the commands. Then move to the experiment section to get some hands-on experience and finish the experiment tasks. After you are done with the experiment, go to the quiz section to test your understanding.
+</p>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-1.2" class="outline-3">
+<h3 id="sec-1.2">Theory </h3>
+<div class="outline-text-3" id="text-1.2">
+
+
+<ol>
+<li>
+Viewing the contents of a directory using the ls command:
+The ls command is used to list the contents of a directory. When it is executed with no arguments, it lists the contents of the current working directory. In order to know the current working directory execute the command pwd.
+
+
+
+</li>
+</ol>
+
+
+<pre class="example">
+johndoe@laptop:~/Documents$ pwd
+/home/johndoe/Documents
+
+johndoe@laptop:~/Documents$ ls
+example.txt  all_about_console.txt my_project
+
+johndoe@laptop:~/Documents$ ls /var/
+backups  cache  crash  games  lib  local  lock  log  mail  opt  run  spool  tmp
+
+</pre>
+
+
+
+
+<p>
+The most used flags for ls command are l, s, t, R, a.
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption></caption>
+<colgroup><col align="left" /><col align="left" />
+</colgroup>
+<thead>
+<tr><th scope="col">Flags</th><th scope="col">Purpose</th></tr>
+</thead>
+<tbody>
+<tr><td>l</td><td>Displays the detailed view of contents of the folder</td></tr>
+<tr><td>a</td><td>Also displays the hidden contents of the folder</td></tr>
+<tr><td>s</td><td>Displays the size of each of the contents of the foder</td></tr>
+<tr><td>R</td><td>Displays content recursively</td></tr>
+<tr><td>t</td><td>Displays contents according to the sorted Modification time</td></tr>
+</tbody>
+</table>
+
+
+
+
+
+<pre class="example">
+johndoe@laptop:~/Documents$ ls -l
+total 4
+
+-rw-r--r--  1 johndoe johndoe 0 2010-08-20 22:22 example.txt
+-rw-r--r--  1 johndoe johndoe 0 2010-08-20 22:22 all_about_console.txt
+drwxr-xr-x  2 johndoe johndoe  4096 2010-08-02 14:03 my_project
+
+</pre>
+
+
+
+
+<p>
+Describe the attributes here 
+</p>
+
+
+
+<pre class="example">
+johndoe@laptop:~/Documents$ ls -a
+.  ..  all_about_console.txt  example.txt  my_project
+
+. and .. refer to current folder and previous folder.
+
+johndoe@johndoe-laptop:~/Documents$ ls my_project/
+vlabs_ui
+
+johndoe@johndoe-laptop:~/Documents$ ls my_project/vlabs_ui/
+css  images  index.html js  Milikan_oil_drop.html  README  simple_pendulum.html  Sys n sw.html
+
+johndoe@laptop:~/Documents$ ls -R
+.:
+all_about_console.txt  example.txt  my_project=
+./my_project:
+vlabs_ui
+./my_project/vlabs_ui:
+css  images  index.html  js  Milikan_oil_drop.html  README  simple_pendulum.html  Sys n sw.html
+./my_project/vlabs_ui/css:
+code.css  common.css  corners.css  forms.css  layout.css  reset.css
+./my_project/vlabs_ui/images:
+graphic-logo.gif
+./my_project/vlabs_ui/js:
+nav.js
+
+</pre>
+
+
+
+
+
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2">Moving through directories: </h2>
+<div class="outline-text-2" id="text-2">
+
+
+<p>
+The command cd (change directory) allows us to move through directory trees. It has one parameter: target directory path. If parameter "-" is given it'll navigate to the previous working directory. If the paramter "~" is given it'll navigate to the home directory.
+</p>
+
+
+
+<pre class="example">
+johndoe@laptop:~/Documents$ cd my_project
+
+johndoe@laptop:~/Documents/my_project$ pwd
+/home/johndoe/Documents/my_project
+
+johndoe@laptop:~/Documents/my_project$ cd ..
+
+johndoe@laptop:~/Documents$ cd -
+
+johndoe@laptop:~Documents/my_project$ cd ~
+
+johndoe@laptop:~$ pwd
+/home/johndoe
+
+johndoe@laptop:~$ cd ~james
+
+johndoe@laptop:/home/james$ pwd
+/home/james
+
+</pre>
+
+
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-3" class="outline-2">
+<h2 id="sec-3">Creating files and folders: </h2>
+<div class="outline-text-2" id="text-3">
+
+
+<p>
+The touch command takes one or more parameters. If the parameter is an already existing file, it's modification time will be updated, else it'll be created.
+</p>
+
+
+
+<pre class="example">
+johndoe@laptop:~/Documents$ touch newfile.txt
+
+johndoe@laptop:~/Documents$ ls
+all_about_console.txt  example.txt my_project newfile.txt
+
+</pre>
+
+
+
+
+<p>
+The mkdir command takes one or more parameters and creates those folders.
+</p>
+
+
+
+<pre class="example">
+johndoe@laptop:~/Documents$ mkdir new_folder
+
+johndoe@laptop:~/Documents$ ls
+all_about_console.txt  example.txt  my_project newfile.txt new_folder
+
+</pre>
+
+
+
+
+</div>
+
+</div>
+
+<div id="outline-container-4" class="outline-2">
+<h2 id="sec-4">Copying, Moving and removing files and folders: </h2>
+<div class="outline-text-2" id="text-4">
+
+
+<ul>
+<li>
+cp - It takes at least two parameters: a source file and a target location to which the file will be copied,
+</li>
+<li>
+mv - Used to change the location of directories and files or renaming them. Parameters are taken in similar way as the cp command.
+</li>
+<li>
+rm - removes files/directories.
+
+</li>
+</ul>
+
+<p>The commands: cp, mv, and rm have the following common parameters:
+</p>
+<ul>
+<li>
+-f force - forces removing a file, even if user has no rights to write the file,
+</li>
+<li>
+-i interactive - user will be asked to confirm the operation,
+
+</li>
+</ul>
+
+<p>The commands cp, mv can also take "-b" which creates backup copy of a file to be overwritten (for cp and mv), 
+</p>
+
+</div>
+
+</div>
+
+<div id="outline-container-5" class="outline-2">
+<h2 id="sec-5">Viewing the contents of a file: </h2>
+<div class="outline-text-2" id="text-5">
+
+
+<p>
+cat - Displays the content of the given files (arguments) concatenated;
+</p>
+
+
+
+</div>
+
+<div id="outline-container-5.1" class="outline-3">
+<h3 id="sec-5.1">Experiment </h3>
+<div class="outline-text-3" id="text-5.1">
+
+
+
+
+          <div id="login"> 
+ 
+          <form action="javascript:loginattempt(document.getElementById('loginform'));" id="loginform"> 
+ 
+          <table id="logintable"><tr> 
+ 
+          <td>Username</td><td> <input type="text" name="username" value="" id="username"/></td></tr> 
+ 
+          <tr><td>Password</td> <td><input type="password" name="password" id="password"/></td></tr> 
+ 
+          <tr><td></td><td><input type="submit" value="Sign in" /></td></tr></table> 
+ 
+          </form> 
+ 
+          No account? <a onclick="clicksignup();" href="#">Sign up here</a> 
+ 
+          <br> 
+ 
+        To login as a guest user, click <a href="#" onclick="guestlogin();">here</a>. 
+ 
+          </div> 
+ 
+          <div id="signup"> 
+ 
+          <div id="signup-warning"></div> 
+ 
+          <form action="javascript:signupattempt(document.getElementById('signupform'));" id="signupform"> 
+ 
+          <table><tr> 
+ 
+          <td>Your name</td><td> <input type="text" name="yourname" value="" id="yourname"/></td></tr> 
+ 
+          <td>Preferred username</td><td> <input type="text" name="preferredusername" value="" id="preferredusername"/></td></tr> 
+ 
+          <tr><td>Password</td> <td><input type="password" name="preferredpassword" id="preferredpassword"/></td></tr> 
+ 
+          <tr><td>Re-enter Password</td> <td><input type="password" name="repreferredpassword" id="repreferredpassword"/></td></tr> 
+ 
+          <tr><td>Email</td> <td><input type="text" name="email" id="email"/></td></tr> 
+ 
+          <tr><td>Re-enter Email</td> <td><input type="text" name="reemail" id="reemail"/></td></tr> 
+ 
+          <tr></tr> 
+ 
+          <tr><td colspan=2>Enter the black characters present in the below image</td></tr> 
+ 
+          <tr><td><img src="php/captcha.php" id="captchaimg"/></td><td><input type="text" name="captcha" id="captcha"/></td></tr> 
+ 
+          <tr><td></td><td><input type="submit" value="Sign up" /></td></tr> 
+ 
+          </table> 
+ 
+          </form> 
+ 
+          </div> 
+ 
+          <div id="logout"> 
+ 
+          <a href="#" onclick="logout();">Logout</a> 
+          </div> 
+ 
+          <pre id="terminal" class="code"><div id="input" class="inpcls"><form name='f' class='cmdform' action='' onsubmit="return false;" id="cmdformid"><table class="inputtable" id="inputtableid"><tr><td><div id='prompt' class='less'>user@pascal:~/$</div></td><td class="inputtd"><input id='inputfield' name='q' type='text' class='cmdline' autocomplete="off" value="" onkeypress="showHint(event,this.value)" /></td></tr></table></form><div id="output" class="outcls"></div></div></pre> 
+ 
+
+
+
+<p>
+<code>Now that we have learnt shell commands to do basic file management, we have an exercise for you.</code>
+</p>
+<p>
+<code>The shell above supports few basic shell commands. Play along to get some hands-on experience of the interface.</code>
+</p>
+<p>
+<code>When you are ready to perform the exercise, which is a set of 5 tasks, enter the command "start".</code>
+</p>
+
+
+<p>
+<code>try: start,next,prev,clear,logout.</code>
+</p>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-5.2" class="outline-3">
+<h3 id="sec-5.2">Quiz </h3>
+<div class="outline-text-3" id="text-5.2">
+
+
+<ol>
+<li>
+The command "rm xyz" is enough to delete the directory xyz containing subdirectories. True or false?
+
+</li>
+<li>
+Permission for a file "-rw-r&ndash;r&ndash;" means it can be executed by anyone in the group. True or false?
+
+</li>
+<li>
+The pwd command gives the absolute path of the current directory. True or false?
+
+</li>
+<li>
+The latest edited file/folder comes last in the output of ls -t. True or false?
+
+</li>
+</ol>
+
+<p>5.In the output of ls -l, the second column for directories denotes which one of the following:
+</p><ul>
+<li>
+ No of subdirectories
+</li>
+<li>
+ No of subdirectories + No. of files int the directory
+</li>
+<li>
+ No of subdirectories including hidden directories
+
+</li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="outline-container-5.3" class="outline-3">
+<h3 id="sec-5.3">Further Readings </h3>
+<div class="outline-text-3" id="text-5.3">
+
+
+<ul>
+<li>
+<a href="http://polishlinux.org/console/file-management-in-linux/">http://polishlinux.org/console/file-management-in-linux/</a>
+</li>
+<li>
+ls man page
+</li>
+<li>
+<a href="http://people.ischool.berkeley.edu/~kevin/unix-tutorial/section3.html">http://people.ischool.berkeley.edu/~kevin/unix-tutorial/section3.html</a>
+</li>
+<li>
+<a href="http://people.ischool.berkeley.edu/~kevin/unix-tutorial/section4.html">http://people.ischool.berkeley.edu/~kevin/unix-tutorial/section4.html</a>
+</li>
+<li>
+ <a href="http://www.devdaily.com/unix/edu/IntroToUnix/node7.shtml">http://www.devdaily.com/unix/edu/IntroToUnix/node7.shtml</a>
+
+</li>
+</ul>
+
+
+</div>
+
+</div>
+
+<div id="outline-container-5.4" class="outline-3">
+<h3 id="sec-5.4">Feedback </h3>
+<div class="outline-text-3" id="text-5.4">
+
+
+<p>
+Please provide us  feedback <a href="https://spreadsheets.google.com/viewform?formkey=dGR6RHRQamxRcGZNYnZQYmlPNWlfSUE6MQ">here</a>
+</p></div>
+</div>
+</div>
+<div id="postamble">
+<p class="author"> Author: Chanakya Aalla
+<a href="mailto:chanakya@vaio">&lt;chanakya@vaio&gt;</a>
+</p>
+<p class="date"> Date: 2011-06-20 20:33:57 IST</p>
+<p class="creator">HTML generated by org-mode 6.33x in emacs 23</p>
+</div>
+</div>
+</body>
+</html>

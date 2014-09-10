@@ -1,0 +1,637 @@
+
+a img{
+border:none;
+
+}
+body{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	clear: both;
+	margin: 0 auto;
+	width: 890px;
+}
+
+.rfloat{
+ float:right;
+ }
+ 
+ .lfloat{
+ 	float:left;
+ }
+ 
+/*****************header & menu***************/
+.header_main{
+margin:0 auto;
+width:846px;
+height:102px;
+}
+#header_cont{
+	width:846px;
+	height:70px;
+	margin-top:20px;
+}
+#header_logo{
+	padding-top:50px;
+	width:464px;
+	height:81px;
+	float:left;
+}
+#header_login{
+padding-top:55px;
+float:left;
+width:382px;
+height:76px;
+}
+#head_reg{
+padding-left:335px;
+width:47px;
+height:20px;
+}
+
+
+
+
+
+.reg{
+color:#e63d27;
+text-decoration:none;
+}
+#uspw{
+width:382px;
+height:20px;
+}
+
+
+#user{
+padding-left:59px;
+width:122px;
+height:20px;
+float:left;
+}
+#pass{
+padding-left:38px;
+width:153px;
+float:left;
+height:20px;
+}
+h2{
+font-weight:normal;
+font-size:11px;
+}
+#login{
+width:382px;
+height:20px;
+}
+h3{
+margin:0px;
+padding:0px;
+font-weight:normal;
+color:#4eb2e7;
+font-size:12px;
+}
+#log{
+float:left;
+padding-left:10px;
+width:40px;
+height:20px;
+}
+form{
+padding-left:9px;
+float:left;
+width:323px;
+height:20px;
+}
+.user{
+float:left;
+margin-right:20px;
+width:140px;
+height:18px;
+font-size:11px;
+color:#666;
+}
+.pass{
+float:left;
+margin-right:3px;
+width:140px;
+height:18px;
+font-size:11px;
+color:#666;
+}
+.btn{
+width:20px;
+height:18px;
+float:left;
+}
+
+
+
+
+#menu_cont{
+width:846px;
+height:31px;
+}
+#menu{
+margin-left:148px;
+}
+.menu_btn{
+margin-right:-2px;
+}
+/*****************header & menu***************/
+
+
+
+/*****************line***************/
+#line{
+	background-color:#999;
+	width:100%;
+	height:1px;
+}
+/*****************line***************/
+
+/*****************bodypart***************/
+.body_main{
+margin:0 auto;
+width:846px;
+}
+.flash{
+	width:846px;
+	height:250px;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 25px;
+	margin-left: 0px;
+}
+
+.main-content{
+	width:846px;
+	height:330px;
+	margin-right: 3px;
+}
+
+
+
+#home-box{
+	width:270px;
+	height:300px;
+	border:1px solid #CCC;
+	margin:0px 10px 0px 0px;
+	float:left;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px;
+	
+}
+#home-box-header{
+	padding-left:10px;
+	width:260px;
+	height:46px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	-moz-border-radius: 5px;
+	border-radius: 5px 5px 5px 5px;
+	
+	
+	
+}
+
+#home-search-box{
+	width:552px;
+	height:300px;
+	border:1px solid #CCC;
+	margin:0px 10px 0px 0px;
+	float:left;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px;
+	
+}
+#home-search-box-header{
+	padding-left:10px;
+	width:542px;
+	height:46px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	-moz-border-radius: 5px;
+	border-radius: 5px 5px 5px 5px;
+	
+	
+	
+}
+
+
+#home-box-item{
+padding:0px 0px 0px 6px;
+width:258px; 
+height:250px;
+}
+
+
+#box-item-company-img{
+padding:3px;
+width:73px;
+height:30px;
+float:left;
+}
+
+
+#home-box-college{
+padding:10px 0px 0px 15px;
+width:250px; 
+height:240px;
+}
+
+
+#home-box-college-row{
+padding:0px 0px 0px 6px;
+width:233px; 
+height:67px;
+}
+
+#home-box-user-row{
+float:left;
+margin-bottom:10px;
+width:100%;
+height:34px;
+}
+
+#subheader{
+	margin-top:12px;
+	margin-left:6px;
+	margin-right:4px;
+	float:left;
+}
+#n1b{
+float:left;
+}
+
+.newsalert{
+	margin-bottom: 35px;
+	
+}
+.newsbtn{
+	margin-bottom:25px;
+	background: url("../../images/grad2-2.gif") repeat-x scroll center top #4B8DF8;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 100%;
+    font-weight: bold;
+    line-height: 34px;
+    padding: 0 20px;
+	border-radius: 3px 0px 0px 3px;
+	-moz-border-radius: 3px 0px 0px 3px;
+}
+.newsmsg{
+	margin-bottom:25px;
+	border: 1px solid #BDCDDE;
+    width: 737px;
+	float: left;
+	border-radius: 0 3px 3px 0px;
+	-moz-border-radius: 0 3px 3px 0px;
+}
+
+.newsmsg p{
+	padding-left:25px;
+}
+
+
+
+h1{
+margin:0px;
+color:#d8660d;
+font-size:9px;
+font-weight:normal;
+}
+
+
+
+#more{
+margin-top:5px;
+margin-left:200px;
+}
+.more{
+color:#fe7800;
+text-decoration:none;
+}
+.more:hover{
+color:#0099FF;
+}
+.more1{
+margin-left:170px;
+color:#fe7800;
+text-decoration:none;
+}
+.more1:hover{
+color:#0099FF;
+}
+
+#home-box-user-row-video-item{
+margin-right:8px;
+float:left;
+}
+#home-box-user-row-item{
+float:left;
+}
+
+h4{
+	margin:0px;
+	padding:0px;
+	color:#005bcc;
+	font-weight:bold;
+	font-size:13px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h5{
+margin:0px;
+padding:0px;
+color:#999999;
+font-weight:normal;
+}
+
+
+
+#recentjobs{
+border: 1px solid #BDCDDE;
+    height: 28px;
+    margin: 0 0px 50px;
+    width: 812px;
+}
+
+#jobsalerts{
+border: 1px solid #BDCDDE;
+    height: 28px;
+    margin: 0 0px 50px;
+    width: 850px;
+}
+
+#recentbtn{
+background:url(../images/recently-jobs.png);
+margin-right:70px;
+width:138px;
+height:28px;
+float:left;
+}
+p{
+margin-top:8px;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:11px;
+}
+.para{
+text-decoration:none;
+color:#0033cc;
+}
+.para:hover{
+text-decoration:underline;
+}
+/*****************bodypart***************/
+/*****************footer***************/
+#footer{
+color:#4c4949;
+}
+.fmenu{
+color:#4c4949;
+text-decoration:none;
+}
+.fmenu:hover{
+color:#000;
+text-decoration:none;
+}
+/*****************footer***************/
+.collegeimg{
+	width:93px;
+	height:63px;
+	float:left;
+}
+.collegeinfo{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:11px;
+	font-weight:normal;
+	color:#0033cc;
+	padding-top:15px;
+	padding-left:100px;
+	
+}
+
+
+
+.main-column { 
+	width: 550px; 	
+	float: left; 
+	margin-top: 15px; 
+	
+
+	#border:1px solid #CCC;}
+
+.sub-column {
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 26px;
+    float: left;
+}
+
+
+
+.column h2 a, .bottom-box h3 a {
+	text-decoration: none;
+	font: 22px 'Arial Rounded MT Bold', sans-serif;
+	color: #6797db;
+}
+
+.flash-column{
+ 	width:843px;
+	height: 245px; 	
+	
+	
+}
+
+.home-login-column{
+ 	width:232px; 
+	float:left;
+	border:1px solid #CCC; 
+	height: 243px; 
+	margin:  5px 0px 10px 0px;
+	border-radius: 5px 5px 5px 5px;
+	
+	
+}
+
+.home-login-column ul{
+list-style-type: disc;
+padding-left: 20px;
+line-height: 100%;
+	
+}
+
+.college-register{
+ background: url('../images/btn-sign-up.png')repeat-x scroll center top #75AAD2;
+line-height: 32px;
+color: #FFFFFF;
+padding-left:10px;
+border-radius: 5px;
+-moz-border-radius: 5px;
+}
+
+#college-register-btn{
+  background: url('../images/grad2-2.gif') repeat-x scroll center top #4B8DF8;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 100%;
+    font-weight: bold;
+    line-height: 32px;
+    padding: 0px 10px;
+     margin:10px 10px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+.jobSeeker-register{
+ background: url('../images/btn-sign-up.png')repeat-x scroll left top #75AAD2;
+line-height: 20px;
+color: #FFFFFF;
+padding-left:10px;
+
+}
+
+.home-login-column li{
+padding-left: 2px;
+line-height: 100%;
+	
+	
+}
+
+.home-login-column p{
+text-decoration:none;
+color:#0033cc;
+font-size: 12px;
+margin:5px 10px;
+}
+
+.video-column {
+    	width: 520px; 
+	height: 350px; 
+	float: left; 
+	padding: 15px; 
+	border-radius: 5px 5px 5px 5px;
+	border:1px solid #CCC;
+	-moz-border-radius: 5px;
+}
+
+.video-column  img{
+    width: 520px;
+	height: 350px; 
+}
+
+.flash-column img{
+ 	width:595px;
+	height: 250px; 
+	float: left; 
+	margin: 5px 0px; 
+	
+}
+
+.user-details-column {
+    width: 520px; 
+	float: left; 
+	padding: 15px; 
+	margin-top: 10px;
+	border:1px solid #CCC;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px;
+}
+
+#sub-column-box{
+	width:236px;
+	border:1px solid #CCC;
+	float:left;
+}
+
+#box-heading{
+padding:10px;
+	width:246px;
+	
+}
+
+
+
+#box-item{
+padding:10px 10px;
+width:258px;
+margin-bottom: 13px;
+border:1px solid #CCC;
+border-radius: 5px 5px 5px 5px;
+-moz-border-radius: 5px;
+}
+
+#box-row{
+margin:10px 0px;
+width:100%;
+height:30px;
+}
+
+
+
+#employer_zone{
+    background: url('../images/grad2-2.gif') repeat-x scroll center top #4B8DF8;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 100%;
+    font-weight: bold;
+    line-height: 32px;
+    padding: 0 20px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+.sub-column form{
+float:left;
+margin-left: -10px;
+}
+
+.box-item a{
+}
+
+input.submit, input.reset {
+    background: url('../images/bg_grey.gif') repeat-x scroll center bottom #FFFFFF;
+    border: 0 solid #676767;
+    cursor: pointer;
+    height: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+
+input.field,  input.active {
+    border: 1px solid #ABADB3;
+    color: #8D8D8D;
+    font-size: 11px;
+   
+    
+}
+
+input, textarea {
+    
+}
+
+input.submit, input.submitMain {
+    
+	font: 12px Arial,Helvetica,sans-serif;
+	font-weight: bold;
+}
+
+#box-item h4{
+	color:#005bcc;
+	font-size:11px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.redtxt {
+    color: #FF0000;
+}
+
+.bottom{
+ margin: 20px 20px 0px;
+ clear: both;
+    height: auto !important;
+}

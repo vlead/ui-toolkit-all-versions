@@ -1,0 +1,100 @@
+#+OPTIONS: num:nil 
+Physics Lab
+* Simple Pendulum
+
+** Introduction
+
+In this module, basic concepts of simple oscillator are explained. Initially, an example of simple pendulum is taken and the basic terminology i.e., what is initial displacement, initial velocity,natural frequency and time period are explained. Each of these terms is illustrated by giving an example, where user can enter his value and observe the behavior of structure for his input.
+
+Simple harmonic oscillator consists of a mass (m) hanging from a string of length (l), fixed at a pivot point P. When the mass is displaced from its mean position by giving some initial displacement (angle), oscillator starts swinging back and fourth with periodic motion.
+pendulum
+** Theory
+
+There are two solutions to \(ax^2 + bx + c = 0\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+By applying Newton's second law for rotational systems, the equation of motion for the pendulum may be obtained.
+
+Here \(\tau\) = Torque ; I = Moment of Inertia; α = Angular Velocity. m is mass of the oscillator, l is the length of the oscillator and \(\theta\) is initial displacement.
+
+If the amplitude of the angular displacement is small then we can use the approximation $$ sin \theta \approx \theta $$
+** Objective
+
+Objective of simple harmonic oscillator experiment is to understand the concept of time period (natural frequency) in harmonic oscillations .
+simple pendulum
+Experiment
+
+Place or link to your experiment java applet or flash file here.
+** Manual
+
+Start the experiment with the default values of length, mass and intial displacement (in angle). Pause the experiment after few cycles and note the observation.
+Observation 1:
+
+    Find the time period of the pendulum by noting the time interval of any one complete cycle from the response graph.
+    You may note that this time period value is same for any complete cycle. Read More
+
+** Quizzes
+*Q1.* 
+   Time taken for one complete oscillation 
+   is called Time Period of the oscillator.
+
+
+#+BEGIN_HTML 
+ <input type="radio" name="q1" id="q1" value="1"> 
+ <font color="green"> True </font> <br> 
+ <input type="radio" name="q1" id="q1" value="0">
+ <font color="red"> False </font> <br><br/>
+#+END_HTML
+              
+*Q2.* 
+   Time period of the oscillator is constant for 
+    given values of mass, length and time conditions.
+#+BEGIN_HTML
+ <input type="radio" name="q2" id="q2" value="1"> 
+ <font color="green"> True </font>  
+ <input type="radio" name="q2" id="q2"value="0">
+<font color="red"> False </font> <br/><br/>
+#+END_HTML 
+    
+*Q3.* 
+ Value of Time period depends on initial conditions. 
+
+#+BEGIN_HTML 
+ <input type="radio" name="q3" id="q3" value="1"> 
+ <font color="green"> True </font> <br> 
+ <input type="radio" name="q3" id="q3"value="0">
+  <font color="red"> False </font> <br/><br/>
+#+END_HTML 
+              
+*Q4.*
+ Value of time period depends on mass. <
+
+#+BEGIN_HTML 
+ <input type="radio" name="q4" id="q4" value="1"> 
+ <font color="green"> True </font> <br> 
+ <input type="radio" name="q4" id="q4" value="0">
+<font color="red"> False </font> <br/><br/> 
+#+END_HTML              
+
+*Q5.* 
+Value of time period depends on length of the oscillator. 
+
+#+BEGIN_HTML 
+  <input type="radio" name="q5" id="q5" value="1"> 
+  <font color="green"> True </font> <br> 
+   <input type="radio" name="q5" id="q5"value="0">
+    <font color="red"> False </font> <br/><br/> 
+   <input type="submit" value="Submit Answers"  class="button" />
+#+END_HTML
+
+
+** Procedure
+
+Procedure for the experiment is as follows.
+** Further Readings
+
+- http://en.wikipedia.org/wiki/Simple_harmonic_motion
+- http://www.physics.uoguelph.ca/tutorials/shm/Q.shm.html
+- Dynamics of structures by Anil K chopra.
+http://surendranath.tripod.com/Applets/Oscillations/SHM/SHMApplet.html
+
+

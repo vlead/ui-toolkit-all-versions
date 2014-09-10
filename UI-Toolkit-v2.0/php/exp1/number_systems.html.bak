@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en-gb" xml:lang="en-gb" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+	<title>Welcome to Number System Experiment</title>
+	<link href="../main.css"  type="text/css" rel="stylesheet" />
+	
+	<!-- Menu head -->
+	<link href="../ja.css" type="text/css" rel="stylesheet" >
+	
+	<script type="text/javascript" src="../jquery-1.6.1.min.js"></script>
+
+</head>
+<body id="bd" class="wide fs3">
+
+
+<div class="body-wrapper" >
+		
+	<div class="header clearfix">
+			 <!-- <h1 class="logo">	<a title="Virtual labs" href="/index.php"><span>Virtual Labs</span></a>			</h1>
+			 -->
+	
+	</div>
+	<!-- BEGIN: MAIN NAVIGATION -->
+	<div id="ja-mainnav">
+		<div id="ja-splitmenu" class="mainlevel clearfix">
+				<ul> 
+					<li class="menu-item0  first-item">
+						<a href="<?php echo base_url();?>" class="menu-item0 active first-item" id="menu1" title="Home"><span class="menu-title">Home</span></a></li>
+					<li class="menu-item1 active"><a href="<?php echo base_url();?>csevlabs" class="menu-item1 active" id="menu2" title="News"><span class="menu-title">Computer Science Labs</span></a></li>
+					<li class="menu-item2"><a href="" class="menu-item2" id="menu23" title="Jobs"><span class="menu-title">Science Labs</span></a></li>
+					<li class="menu-item3"><a href="" class="menu-item3" id="menu4" title="Knowledge"><span class="menu-title">Engineering Labs</span></a></li>
+					<li class="menu-item4"><a href="" class="menu-item4" id="menu5" title="Directory"><span class="menu-title">About us &nbsp;</span></a></li>
+					<li class="menu-item5 last-item"><a href="" class="menu-item5" id="menu5" title="Events"><span class="menu-title">Contact us&nbsp;&nbsp;</span></a></li>
+						
+					</ul>
+		</div>	
+	</div>
+	
+	<div >
+		<ul id="breadcrumbs">  
+			  <li><a href="" >Virtual-lab</a>  &nbsp;&nbsp; &gt;&gt;</li>
+			  <li><a href="" >CSE </a>  &nbsp;&nbsp; &gt;&gt;</li>
+			  <li><a href="" >Data Structures </a>  &nbsp;&nbsp; &gt;&gt;</li>
+			  <li><a href="" class="current"> Number System</a>  
+		</ul>
+								
+	</div>
+
+	<div class="body-content">
+			<table class="">
+				<tr>
+					<td>
+						
+						<div> 
+							<b>
+								<h1>Number System Experiment</h1>	
+							</b>
+							<br>
+						</div>
+						<div>  
+
+<script type="text/javascript">
+$(document).ready(function(){
+
+  
+  function hideAll(num){
+  for(i=1;i<=8;i++)
+  {
+		if(i!=num){
+		$("#experiment-article-section-" + i + "-content").hide();
+		}
+		$("#experiment-article-section-" + num + "-content").show();
+
+  }
+  }
+  hideAll(1);
+var a = $(".a1").getAttribute("href");
+ alert(a);
+
+  $(".a1").click(function(){
+
+			var url = this.getAttribute("href");
+			var x = url.split('#');
+			$(".a1").css("color","#3B5998");
+			$(this).css("color","#961B25");
+			hideAll(x[1]);
+			});
+
+});
+</script>
+							<ul id="Expnavigation">  
+							  <li><a href="#1" class="a1"  >Introduction</a>  </li>
+							  <li><a href="#2" class="a1" >Theory </a>  </li>
+							  <li><a href="#3" class="a1">Objective </a>  </li>
+							  <li><a href="#4" class="a1">Manual </a>  </li>
+							  <li><a href="#5" class="a1">Experiment </a>  </li>
+							  <li><a href="#6" class="a1">Quizzes </a>  </li>
+							  <li><a href="#7" class="a1">Procedure </a>  </li>
+							  <li><a href="#8" class="a1">Further Readings</a>  
+						</ul> 
+						</div>
+					</td>
+				</tr>
+				<tr><td height="20"></td></tr>
+				<tr >
+					<td>
+						 <div id="experiment-article-section-1-content" >
+						 	<b>
+								<a href="" target="_blank" style="color:#961B25;"> Introduction</a>
+							</b>
+							<br><br>
+<p>
+            In this module, basic concepts of simple oscillator 
+            are explained. Initially, an example of simple 
+            pendulum is taken and the basic terminology i.e., 
+            what is <span class="term">initial displacement</span>, <span class="term">
+            initial velocity</span>,<span class="term">natural frequency
+            </span> and <span class="term">time period</span> are explained. 
+            Each of these terms is illustrated by giving an 
+            example, where user can enter his value and observe 
+            the behavior of structure for his input.
+            </p>
+
+            <p>
+            Simple harmonic oscillator consists of a <span class="term"> 
+            mass (m) </span> hanging from a string of <span class="term">
+            length (l)</span>, fixed at a pivot point P. 
+            When the mass is displaced from its <span class="term"> mean 
+            position </span> by giving some initial displacement 
+            (angle), oscillator starts swinging back and fourth 
+            with <span class="term">periodic motion</span>.
+            </p>  
+						 </div>						 
+				 <div id="experiment-article-section-2-content" >
+						 	<b>
+								<a href="" target="_blank" style="color:#961B25;"> Theory</a>
+							</b>
+							<br><br>
+          <p>
+          There are two solutions to \(ax^2 + bx + c = 0\) and 
+          they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$ 
+          </p>
+          <p>
+          By applying <span class="term">Newton's second law</span> for 
+          rotational systems, the equation of motion for the 
+          pendulum may be obtained.
+          </p> 
+
+          <p>
+          Here \(\tau\)  =  <span class="term">Torque </span>;   I  =  
+          <span class="term">Moment of Inertia</span>;
+          &alpha; = <span class="term"> Angular
+          Velocity</span>. m is mass of the oscillator, l is
+          the length of the oscillator and \(\theta\) is initial
+          displacement. 
+          </p>
+          
+          <p>							
+          If the amplitude of the angular displacement is 
+          small then we can use the approximation 
+          $$ sin \theta \approx \theta $$
+
+          </p>  
+						 </div>	
+
+
+						 <div id="experiment-article-section-3-content" >
+						 	<b>
+								<a href="" target="_blank" style="color:#961B25;"> Objective</a>
+							</b>
+							<br><br>
+          <p>
+            Objective of simple harmonic oscillator experiment 
+            is to understand the concept of <span class="term">time period 
+            </span>(natural frequency) in <span class="term"> harmonic 
+            oscillations </span>.
+          </p> 
+       
+          <img  src="http://cite.iiit.ac.in/vlab/cITe/images/eerc/Expr1/simple-pendulum.JPG" 
+          alt="simple pendulum" />  
+						 </div>	
+
+			<div id="experiment-article-section-4-content" >
+						 	<b>
+								<a href="" target="_blank" style="color:#961B25;"> Manual</a>
+							</b>
+							<br><br>
+          <p> 
+            Start the experiment with the default values of 
+            length, mass and intial displacement (in angle). 
+            Pause the experiment after few cycles and note 
+            the observation.
+          </p> 
+
+        <h3>Observation 1:</h3> 
+          <ol> 
+            
+            <li>
+              Find the time period of the pendulum by noting the 
+              time interval of any one complete cycle from the 
+              response graph. 
+            </li> 
+
+            <li>
+              You may note that this time period value is same 
+              for any complete cycle.
+              <a  class="more" href="cITe/Documents/eerc/
+              pdf/1.manual.pdf">Read More</a>  
+            </li> 
+
+          </ol>
+
+          <a onclick="window.open('http://cite.iiit.ac.in/vlab/cITe/media/eerc/Expr1/shm.htm', 
+          null,'scrollbars=yes, width=' + (screen.availWidth) 
+          +',height=' + (screen.availHeight)); return false;"
+
+          href="http://cite.iiit.ac.in/vlab/cITe/media/eerc/Expr1/shm.htm">		   
+          <img src="http://cite.iiit.ac.in/vlab/cITe/images/demo.JPG" 
+          alt="" width="400" height="200"></a>  
+						 </div>
+
+
+						 <div id="experiment-article-section-5-content" >
+						 	<b>
+								<a href="" target="_blank" style="color:#961B25;"> Experiment</a>
+							</b>
+							<br><br>
+          <p>
+	        Place or link to your experiment java applet 
+	        or flash file here. 
+	        
+            
+          </p>   
+						 </div>
+
+								 <div id="experiment-article-section-6-content" >
+						 	<b>
+								<a href="" target="_blank" style="color:#961B25;"> Quizzes</a>
+							</b>
+							<br><br>
+         <p>
+              
+              <b>Q1.</b> 
+              Time taken for one complete oscillation 
+              is called Time Period of the oscillator. <br> 
+              <input type="radio" name="q1" id="q1" value="1"> 
+                <font color="green"> True </font> <br> 
+              <input type="radio" name="q1" id="q1" value="0">
+                <font color="red"> False </font> <br/><br/> 
+              
+              <b>Q2.</b> 
+              Time period of the oscillator is constant for 
+              given values of mass, length and initial 
+              conditions.<br> 
+              <input type="radio" name="q2" id="q2" value="1"> 
+                <font color="green"> True </font> <br> 
+              <input type="radio" name="q2" id="q2"value="0">
+                <font color="red"> False </font> <br/><br/> 
+              
+              <b>Q3.</b> 
+              Value of Time period depends on initial 
+              conditions. <br> 
+              <input type="radio" name="q3" id="q3" value="1"> 
+                <font color="green"> True </font> <br> 
+              <input type="radio" name="q3" id="q3"value="0">
+                <font color="red"> False </font> <br/><br/> 
+              
+              <b>Q4.</b> 
+              Value of time period depends on mass. <br> 
+              <input type="radio" name="q4" id="q4" value="1"> 
+                <font color="green"> True </font> <br> 
+              <input type="radio" name="q4" id="q4" value="0">
+                <font color="red"> False </font> <br/><br/> 
+              
+              <b>Q5.</b> 
+              Value of time period depends on length of the 
+              oscillator. <br> 
+              <input type="radio" name="q5" id="q5" value="1"> 
+                <font color="green"> True </font> <br> 
+              <input type="radio" name="q5" id="q5"value="0">
+                <font color="red"> False </font> <br/><br/> 
+              <input type="submit" value="Submit Answers" 
+                class="button" />
+            </p>
+  
+						 </div>
+
+
+						 <div id="experiment-article-section-7-content" >
+						 	<b>
+								<a href="" target="_blank" style="color:#961B25;"> Procedure</a>
+							</b>
+							<br><br>
+	    <p>
+	      Procedure for the experiment is as follows.
+	    </p>  
+						 </div>
+
+								 <div id="experiment-article-section-8-content" >
+						 	<b>
+								<a href="" target="_blank" style="color:#961B25;"> Further Readings</a>
+							</b>
+							<br><br>
+ <ul>	
+              <li>
+                <a href="http://en.wikipedia.org/wiki/
+                Simple_harmonic_motion">http://en.wikipedia.org/wiki/Simple_harmonic_motion</a>
+              </li>
+              <li>
+                <a href="http://www.physics.uoguelph.ca/
+                tutorials/shm/Q.shm.html">http://www.physics.uoguelph.ca/tutorials/shm/Q.shm.html</a>
+              </li> 
+              <li>
+                Dynamics of structures by Anil K chopra. 
+              </li> 
+              <li>
+                <a href="http://surendranath.tripod.com/Applets/
+                Oscillations/SHM/SHMApplet.html">http://surendranath.tripod.com/Applets/Oscillations/SHM/SHMApplet.html</a> 
+              </li>
+            </ul>  
+						 </div>
+					</td>
+						
+				</tr>
+				
+				
+
+
+	
+				
+				
+			</table>
+	</div>
+	
+	<div class="footer">
+		 <a href="">Home</a>  | <a href="">Computer Science Labs</a> | <a href="">Science Labs</a> | <a href="">Engineering labs</a> | <a href="">Contact Us</a>
+	
+	
+	</div>
+
+
+
+
+</body>
+</html>

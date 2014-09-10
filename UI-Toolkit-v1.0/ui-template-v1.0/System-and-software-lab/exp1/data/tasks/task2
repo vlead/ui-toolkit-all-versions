@@ -1,0 +1,9 @@
+Task 2:
+
+Create 5 directories - a,b,c,d,e in the current directory. 
+Then, move them such that the following hierarchy is created: 
+
+1. Directory a/ is in your home directory.
+2. Directory b/ is in a/
+3. Directories c/ and d/ are in directory b/
+4. Directory e/ is in directory d/

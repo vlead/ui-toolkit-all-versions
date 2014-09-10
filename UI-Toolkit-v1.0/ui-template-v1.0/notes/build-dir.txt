@@ -1,0 +1,165 @@
+Structure of the ui directory
+=============================
+
+ui
+`-- src
+    |-- help
+    |   |-- help.html
+    |   |-- images
+    |   `-- index.html
+    |-- lab
+    |   |-- content.html
+    |   |-- css
+    |   |-- default.html
+    |   |-- exp1
+    |   |   |-- PendulumForces.swf
+    |   |   |-- content.html
+    |   |   |-- default.html
+    |   |   `-- index.html
+    |   |-- images
+    |   |   |-- introduction.jpg
+    |   |   `-- ... 
+    |   |-- index.html
+    |   `-- js
+    |-- lib
+    |   `-- js
+    |       |-- MathJax-version.txt
+    |       |-- jquery-1.4.2.min.js
+    |       `-- modernizr-1.5.min.js
+    |-- makefile
+    `-- themes
+        |-- blue-icon
+        |   |-- css
+        |   |   |-- default.css
+        |   |   `-- style.css
+        |   |-- images 
+        |   `-- js
+        `-- maroon-grid
+            |-- css
+            |   |-- default.css
+            |   `-- style.css
+            |-- images
+            `-- js
+    
+
+help: 
+  contains this documentation on how to use the
+  UI framework
+
+lab:
+
+  all the source files for the lab are here.
+  index.html and default.html should be
+  untouched.  You should edit only the file
+  content.html in the current and the exp1
+  directory.  You may want to create your own
+  exp directories but make sure you copy the
+  index.html and default.html from the given
+  exp1 directory.
+
+  In addition, the lab directory contains js,
+  images, and css directories.  These
+  directories are there to hold your own custom
+  files.
+
+lib: 
+
+  All the library files (like MathJax, jQuery,
+  modernizr) are in this directory.
+
+themes:
+
+  Two themes are supplied with this release.
+
+  * maroon-grid (uses iiith style, which does
+    not display icons)
+
+  * blue-icon (uses the iitb style, which uses
+    icons for sections)
+
+  Of course, you are free to design your own
+  theme, and place it in the themes folder.
+
+
+makefile:
+
+  This file is used for building a release
+  (described below).
+
+
+Building a release
+==================
+
+The build is the final deliverable of the lab's
+content.  To create a build, you need to cd to
+the directory containing the makefile and run
+the command
+
+  make -k theme=<theme-name>
+
+   * maroon-grid
+   * blue-icon
+   * <your-own-theme>, if you create one
+
+
+  or, the command 
+
+      make -k  
+
+  which uses the default theme blue-icon.  
+
+  The first time around, the build will take a
+  long time, because it copies the MathJax
+  directory.  The next time around, it shouldn't
+  take that long.  
+
+     make clean
+
+  will clean the build directory (but keep the
+  js directory intact)
+
+
+Structure of the build directory
+================================
+
+build/
+   theme-<theme-name>
+   content.html
+   default.html
+   index.html
+   exp1/
+
+    content.html
+    default.html
+    index.html
+    ...
+
+   css/
+     default.css
+     style.css
+
+   images/
+     ...
+
+   js/
+     jquery.js
+     modernizer.js
+     MathJax/
+       MathJax.js
+      ...
+
+
+Landing page
+============
+
+   The UI is designed to open at the following page:
+
+        build/index.html
+
+
+
+Adding lab and experiment content
+=================================
+ 
+
+ 

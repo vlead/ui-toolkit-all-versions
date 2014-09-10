@@ -1,0 +1,21 @@
+#+OPTIONS: toc:nil num:nil
+ My Lab
+   welcome to my lab
+
+[[file:./images/introduction.jpg]]
+
+** Introduction
+  Welcome to the physics lab ! In this lab we will do virtual experiments to understand 
+  Newton's laws of motion . We will start with a simple pendulum , and from then on , the experiments 
+  get more interesting.
+
+  Another paragraph explaining the lab.
+
+
+[[file:./images/simulation.jpg]]
+
+** List of Experiments
+  
+  + [[file:./exp1/index.html][simple Pendulum experiment]]
+
+  

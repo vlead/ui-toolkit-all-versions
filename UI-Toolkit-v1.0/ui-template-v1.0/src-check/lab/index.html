@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+  <!-- The default title of the lab. -->
+  <title class="custom" id="page-title">Virtual Labs</title>
+ 
+  <script src="js/jquery-1.7.1.min.js"></script>
+
+  <script type="text/javascript">
+  $(document).ready(function() 
+  {
+    $('#hidden-content').load('default.html #lab', function(response,status,xhr)
+    {
+      //alert("hidden content loaded successfully");
+       
+    $('#container').load('content.html #lab', function(response,status,xhr)
+    {
+      //alert("container loaded successfully");
+      $("#container .default").each(function()
+      {
+        sectionId = $(this).attr('id');
+        sectionContent = $("#hidden-content #" + sectionId).html();
+        $("#container #" + sectionId).html(sectionContent);
+      });
+
+      $("#container #lab-article-sections > section").each(function() 
+      {
+
+        sectionId = $(this).attr('id');
+        headerId = $("#" + sectionId + "-heading").html();
+        iconId = $("#" + sectionId + "-icon").html();
+                                        
+        $("#container #lab-article-navigation ul").append(
+                "<li> <a href=\'#\' id=\'"+ sectionId + 
+                "-menu\'>" + iconId +"<br />" + headerId + 
+                "</a> </li>");
+                                        
+      });
+      /*                          
+      $("#lab-article-sections").after("<div id='lab-article-sections-view'> </div>");
+      $("#lab-article-sections-view").html($("#lab-article-sections section:first").html());*/
+      $("#lab-article-sections section").hide();
+	  $("#lab-article-sections section:first").show();
+    });		
+  });
+
+    });
+  </script>
+
+</head>
+
+<body> 
+  <div id="container"></div>
+  <div id="hidden-content" />
+		
+  
+</body>
+</html>
