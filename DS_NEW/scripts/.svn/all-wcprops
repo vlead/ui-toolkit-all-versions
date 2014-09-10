@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/cse01/DS_NEW/!svn/ver/44/scripts
+END
+build
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/cse01/DS_NEW/!svn/ver/44/scripts/build
+END
+initialize
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/cse01/DS_NEW/!svn/ver/44/scripts/initialize
+END
+startup
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/cse01/DS_NEW/!svn/ver/44/scripts/startup
+END
+test-to-deploy.sh
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/cse01/DS_NEW/!svn/ver/1/scripts/test-to-deploy.sh
+END
+restore
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/cse01/DS_NEW/!svn/ver/44/scripts/restore
+END
+dependencies.txt
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/cse01/DS_NEW/!svn/ver/44/scripts/dependencies.txt
+END
+backup
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/cse01/DS_NEW/!svn/ver/44/scripts/backup
+END
+shutdown
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/cse01/DS_NEW/!svn/ver/44/scripts/shutdown
+END
+transfer.sh
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/cse01/DS_NEW/!svn/ver/1/scripts/transfer.sh
+END
