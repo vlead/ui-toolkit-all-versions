@@ -1,0 +1,236 @@
+
+
+/* COMMON STYLE
+--------------------------------------------------------- */
+
+
+ul {
+	list-style: none;
+}
+
+ul li {
+	background: url(../images/bullet.gif) no-repeat 18px 7px;
+	line-height: 160%;
+	padding-left: 30px;
+}
+
+ol li {
+	line-height: 180%;
+	margin-left: 35px;
+}
+
+
+/* MAIN NAVIGATION
+--------------------------------------------------------- */
+#ja-mainnavwrap {
+	background: url(../images/shadow.gif) repeat-x bottom;
+	height: 37px;
+	position: relative;
+}
+
+#ja-mainnav {
+	background: url(../images/grad2.gif) repeat-x top #2C79B3;
+	height: 32px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+#ja-mainnav a, #ja-subnav a {
+	outline: none;
+}
+
+#ja-subnav {
+	display: block;
+	
+	border-bottom: 1px solid #E7E8E6;
+	height: 28px;
+}
+
+#ja-subnav ul {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+
+#ja-subnav li {
+	background: none;
+	display: inline;
+	margin: 0;
+	padding: 0;
+font-size: 20px;
+}
+
+#ja-subnav li a {
+font-size: 20px;
+	display: block;
+	float: left;
+	padding: 0 15px;
+	line-height: 28px;
+	background: url(../images/vline.gif) no-repeat center left;
+}
+
+#ja-subnav li.active a,
+#ja-subnav li.active a:hover,
+#ja-subnav li.active a:active,
+#ja-subnav li.active a:focus {
+	font-weight: bold;
+	color: #8BAB32;
+}
+
+#ja-subnav li a.first-item {
+	background: none;
+}
+
+/* breadcrumbs */
+#ja-pathway {
+	border: 1px solid #E7E8E6;
+	border-bottom: none;
+	padding: 5px 15px;
+	color: #626A69;
+	font-weight: bold;
+	background: #F8F8F7;
+}
+
+#ja-pathway strong {
+	margin-right: 5px;
+}
+
+#ja-pathway a {
+	color: #626A69;
+	font-weight: normal;
+}
+
+#ja-pathway img {
+	margin: 1px 5px;
+}
+
+/* Default Joomla! Menu */
+ul.menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	
+}
+
+ul.menu li {
+	background: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu li a {
+	display: block;
+	outline: none;
+	padding: 6px 4px;
+	color: #626A69;
+	border-bottom: 1px solid #E7E8E6;
+}
+
+ul.menu li a:hover,
+ul.menu li a:active,
+ul.menu li a:focus {
+	color: #2C79B3;
+}
+
+ul.menu li.active a {
+	color: #2C79B3;
+	font-weight: bold;
+}
+
+ul.menu li ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu li li a {
+	border: none;
+	font-weight: normal !important;
+	padding-left: 20px !important;
+	color: #626A69 !important;
+	width: 75%; /*need for ie6 transparent*/
+}
+
+ul.menu li li.active a {
+	color: #2C79B3 !important;
+	font-weight: bold !important;
+}
+
+/* Clearfix */
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+* html > body .clearfix {
+	display: block;
+	width: 100%;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+/* MAIN NAVIGATION
+----------------------------------------------------------- */
+#ja-splitmenu {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	
+}
+
+#ja-splitmenu ul {
+	margin: 0;
+font-size: 14px;
+	padding: 0;
+	
+}
+
+#ja-splitmenu li {
+	float: left;
+	padding: 0;
+	margin: 0;
+	background: none;
+	border-right: 1px solid #75AAD2;
+	
+}
+
+#ja-splitmenu a {
+	display: block;
+	float: left;
+	text-decoration: none;
+	line-height: 32px;
+	padding: 0 20px;
+	color: #C3DBED;
+	font-size: 100%;
+	font-weight: bold;
+	border-right: 1px solid #2B6484;
+}
+
+#ja-splitmenu a:hover,
+#ja-splitmenu a:active,
+#ja-splitmenu a:focus {
+	color: #FFFFFF;
+	background: url(../../images/grad2-1.gif) repeat-x top #2B6484;
+}
+
+#ja-splitmenu li.active a,
+#ja-splitmenu li.active a:hover,
+#ja-splitmenu li.active a:active,
+#ja-splitmenu li.active a:focus {
+	color: #FFFFFF;
+	background: url(../../images/grad2-2.gif) repeat-x top #91AE4E;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	
+}
+
+#main-nav-ul.menu li a:hover,
+#main-nav-ul.menu li a:active,
+#main-nav-ul.menu li a:focus {
+	color: #FFFFFF;
+}

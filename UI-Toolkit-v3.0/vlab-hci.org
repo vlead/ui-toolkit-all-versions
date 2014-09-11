@@ -1,0 +1,18 @@
+#+TITLE: Issues with the web pages of virtual lab 
+#+AUTHOR: Himanshu Zade, Swetha Reddy
+#+DATE: 1st June, 2012
+
+* Issues
+** UI toolkit
+*** DONE Bread crumb locations out of order 
+*** TODO Reorient experiment tabs
+**** If new tab added, dynamic size allocation
+**** NOT NEEDED Proper semantically correct Images
+*** DONE Modify index.php 
+*** DONE Change index.html to index.php
+*** TODO Modify exp-template.php
+convert the absolute links to relative links
+*** TODO identify footer issue
+As of now this seems to work fine in the ui toolkit.
+** VLEAD Web pages
+
